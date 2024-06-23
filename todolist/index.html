@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="todo-container"> 
+        <h1>To Do List</h1>
+        
+        <section id="todo-stats">
+            <span id="todo-count">0</span> tasks remaining
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a task">
+            <button type="submit">Add</button>
+        </form>
+        </section>
+
+        <ul id="todo-list">
+            <!-- Example of a to-do item -->
+            <li>
+                <span class="todo-item">Doing a Meditation</span>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </li>
+            <li>
+                <span class="todo-item"> Making  a Breakfast</span>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </li>
+            <li>
+                <span class="todo-item">Going to the College</span>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+        </ul>
+        
+            <button class="task-completed-btn">Task Completed</button>
+            
+            <button class="task-not-completed-btn">Task Not Completed</button>
+                <button id="clear-completed">Clear Completed</button>
+                <p id="current-date"></p>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
